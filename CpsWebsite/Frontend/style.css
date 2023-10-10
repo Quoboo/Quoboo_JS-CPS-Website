@@ -1,0 +1,111 @@
+body {
+    font-family: Source Code Pro;
+    background-color: #e9e4f6;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    text-align: center;
+}
+
+#gameContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+button {
+    font-size: 24px;
+    padding: 20px 40px;
+    background-color: #4f5da1;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.1s;
+    animation: pulse 1s infinite alternate;
+    font-family: Source Code Pro; 
+}
+
+
+button:hover {
+    background-color: #1e2947;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.1);
+    }
+}
+
+#cpsDisplay {
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+#countdown {
+    font-size: 24px;
+    margin-top: 20px;
+    display: none;
+}
+
+.result-container {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+#resultText {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+#resultGrade {
+    font-size: 20px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #e9e4f6;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    padding: 10px 0;
+}
+
+.navbar i {
+    font-size: 24px;
+    margin: 0 10px;
+    color: #4f5da1;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.navbar i:hover {
+    animation: pulse 1s infinite alternate;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.1);
+    }
+}
